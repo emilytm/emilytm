@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(<App />, document.getElementById('root'));
 
 
 
@@ -13,3 +13,12 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 console.log("Hello")
+
+const buttons = document.querySelector('button')
+console.log(buttons)
+document.addEventListener("click",function(e) {
+  console.log(e.target)
+  if (e.target.id === 'github-btn'){
+    window.open('https://github.com/emilytm','_blank')
+  }
+});
